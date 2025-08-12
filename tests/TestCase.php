@@ -2,7 +2,7 @@
 
 namespace Visualbuilder\EmailTemplates\Tests;
 
-use Visualbuilder\FilamentTinyEditor\TinyeditorServiceProvider;
+use AmidEsfahani\FilamentTinyEditor\TinyeditorServiceProvider;
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
 use Filament\Actions\ActionsServiceProvider;
@@ -63,12 +63,12 @@ class TestCase extends Orchestra
     protected function defineDatabaseMigrations()
     {
         $this->loadLaravelMigrations();
-        $this->loadMigrationsFrom(__DIR__ . '/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/migrations');
     }
 
     protected function defineDatabaseFactories()
     {
-        $this->withFactories(__DIR__ . '/factories');
+        $this->withFactories(__DIR__.'/factories');
     }
 
     public function makeTheme()
